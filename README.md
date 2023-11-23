@@ -7,21 +7,19 @@ El modelado de datos se organiza en entidades que representan los principales co
 # [Galleta]
 Modelado de datos para las galletas
 
-Atributos Principales:
-id: Id para identificar la galleta.
-cantidad: Cantidad para cada galleta.
-nombre: Nombre de cada galleta.
-descripcion: Descripción de cada galleta.
-fotografia: Fotografía de cada galleta.
+- id: Id para identificar la galleta.
+- cantidad: Cantidad para cada galleta.
+- nombre: Nombre de cada galleta.
+- descripcion: Descripción de cada galleta.
+- fotografia: Fotografía de cada galleta.
 
 # [Usuario]
 
 Modelado de datos para los usuarios
 
-Atributos Principales:
-id: Id para identificar a los usuarios.
-nombre_usuario: nombre de usuario.
-contrasenia: contraseña del usuario.
+- id: Id para identificar a los usuarios.
+- nombre_usuario: nombre de usuario.
+- contrasenia: contraseña del usuario.
 
 
 # Uso del Modelo
