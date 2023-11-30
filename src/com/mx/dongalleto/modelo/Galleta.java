@@ -14,23 +14,26 @@ public class Galleta {
     String nombre;
     String descripcion;
     String fotografia;
+    float precio;
 
     public Galleta() {
     }
 
-    public Galleta(int cantidad, String nombre, String descripcion, String fotografia) {
+    public Galleta(int cantidad, String nombre, String descripcion, String fotografia, float precio) {
         this.cantidad = cantidad;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fotografia = fotografia;
+        this.precio = precio;
     }
 
-    public Galleta(int idGalleta, int cantidad, String nombre, String descripcion, String fotografia) {
+    public Galleta(int idGalleta, int cantidad, String nombre, String descripcion, String fotografia, float precio) {
         this.idGalleta = idGalleta;
         this.cantidad = cantidad;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fotografia = fotografia;
+        this.precio = precio;
     }
 
     public int getIdGalleta() {
@@ -73,6 +76,14 @@ public class Galleta {
         this.fotografia = fotografia;
     }
 
+    public float getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(float precio) {
+        this.precio = precio;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -82,6 +93,7 @@ public class Galleta {
         sb.append(", nombre=").append(nombre);
         sb.append(", descripcion=").append(descripcion);
         sb.append(", fotografia=").append(fotografia);
+        sb.append(", precio=").append(precio);
         sb.append('}');
         return sb.toString();
     }
