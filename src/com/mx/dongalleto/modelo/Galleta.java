@@ -14,25 +14,28 @@ public class Galleta {
     String nombre;
     String descripcion;
     String fotografia;
+    float peso;
     float precio;
 
     public Galleta() {
     }
 
-    public Galleta(int cantidad, String nombre, String descripcion, String fotografia, float precio) {
+    public Galleta(int cantidad, String nombre, String descripcion, String fotografia, float peso, float precio) {
         this.cantidad = cantidad;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fotografia = fotografia;
+        this.peso = peso;
         this.precio = precio;
     }
 
-    public Galleta(int idGalleta, int cantidad, String nombre, String descripcion, String fotografia, float precio) {
+    public Galleta(int idGalleta, int cantidad, String nombre, String descripcion, String fotografia, float peso, float precio) {
         this.idGalleta = idGalleta;
         this.cantidad = cantidad;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fotografia = fotografia;
+        this.peso = peso;
         this.precio = precio;
     }
 
@@ -76,6 +79,14 @@ public class Galleta {
         this.fotografia = fotografia;
     }
 
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
+
     public float getPrecio() {
         return precio;
     }
@@ -93,6 +104,7 @@ public class Galleta {
         sb.append(", nombre=").append(nombre);
         sb.append(", descripcion=").append(descripcion);
         sb.append(", fotografia=").append(fotografia);
+        sb.append(", peso=").append(peso);
         sb.append(", precio=").append(precio);
         sb.append('}');
         return sb.toString();
